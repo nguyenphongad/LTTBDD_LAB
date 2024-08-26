@@ -1,11 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <script>
+        const diemDolphins1 = 101, diemDolphins2 = 108, diemDolphins3 = 89;
+        const diemKoalas1 = 120, diemKoalas2 = 91, diemKoalas3 = 110;
+
+        const trungBinhDolphins = (diemDolphins1 + diemDolphins2 + diemDolphins3) / 3;
+        const trungBinhKoalas = (diemKoalas1 + diemKoalas2 + diemKoalas3) / 3;
+
+
+        if (trungBinhDolphins > trungBinhKoalas && trungBinhDolphins >= 100) {
+            console.log("Dolphins thắng cuộc với điểm tối thiểu!");
+        } else if (trungBinhKoalas > trungBinhDolphins && trungBinhKoalas >= 100) {
+            console.log("Koalas thắng cuộc với điểm tối thiểu!");
+        } else if (trungBinhDolphins === trungBinhKoalas && trungBinhDolphins >= 100 && trungBinhKoalas >= 100) {
+            console.log("Hai đội hòa nhau với điểm tối thiểu!");
+        } else {
+            console.log("Không có đội nào thắng cuộc vì không đạt điểm tối thiểu!");
+        }
+
+
+
+    </script>
 </body>
+
 </html>
