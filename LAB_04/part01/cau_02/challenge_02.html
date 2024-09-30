@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const canNangMark = 78; // kg
+        const chieuCaoMark = 1.69; // mét
+        const canNangJohn = 92; // kg
+        const chieuCaoJohn = 1.95; // mét
+
+        const bmiMark = canNangMark / (chieuCaoMark ** 2);
+        const bmiJohn = canNangJohn / (chieuCaoJohn ** 2);
+
+        if (bmiMark > bmiJohn) {
+            console.log(`BMI của Mark (${bmiMark.toFixed(1)}) cao hơn BMI của John (${bmiJohn.toFixed(1)})!`);
+        } else if (bmiMark < bmiJohn) {
+            console.log(`BMI của John (${bmiJohn.toFixed(1)}) cao hơn BMI của Mark (${bmiMark.toFixed(1)})!`);
+        } else {
+            console.log(`BMI của Mark (${bmiMark.toFixed(1)}) bằng với BMI của John (${bmiJohn.toFixed(1)})!`);
+        }
+
+    </script>
+</body>
+
+</html>
